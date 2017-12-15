@@ -12,7 +12,7 @@
 		"editorial": ""
 	},
 	"versions": {
-		"duration": "60"
+		"duration": "60 mins"
 	}
 },
 {
@@ -29,7 +29,7 @@
 		"editorial": ""
 	},
 	"versions": {
-		"duration": "60"
+		"duration": "60 mins"
 	}
 },
 {
@@ -46,7 +46,7 @@
 		"editorial": ""
 	},
 	"versions": {
-		"duration": "60"
+		"duration": "60 mins"
 	}
 },
 {
@@ -86,9 +86,7 @@
 {
 	"title": "Drugsland",
 	"subtitle": "County Lines: 1. Operation Hazel",
-	"synopses":{
-		"small":"A network from London has taken over the drugs market in Weston Super-Mare and Yeovil."
-	},
+	"synopses":{ "small":"A network from London has taken over the drugs market in Weston Super-Mare and Yeovil." },
 	"images": {
 		"standard": "/img/prog-images/p05qgkcv.jpg"
 	},
