@@ -1,0 +1,86 @@
+[{
+	"title": "Life and Death Row",
+	"subtitle": "Series 2: 4. Forgiveness",
+	"editorial_subtitle": "",
+	"synopses": {
+		"small": "T.T. Trottie's father killed his mother 21 years ago and will be executed in a week."
+	},
+	"images": {
+		"standard": "/img/bbc3/p03x1pdx.jpg"
+	},
+	"labels": {
+		"category": "Documentary",
+		"editorial": ""
+	},
+	"versions": {
+		"duration": "25 mins"
+	}
+}, {
+	"title": "Reggie Yates: Hidden Australia",
+	"subtitle": "2. Addicted to Ice",
+	"editorial_subtitle": "2/2 Addicted to Ice",
+	"synopses": {
+		"small": "Reggie Yates travels to Melbourne to learn about an epidemic of the drug known as ice."
+	},
+	"images": {
+		"standard": "/img/bbc3/p04ppkf0.jpg"
+	},
+	"labels": {
+		"category": "Documentary",
+		"editorial": ""
+	},
+	"versions": {
+		"duration": "49 mins"
+	}
+}, {
+	"title": "People Just Do Nothing",
+	"subtitle": "Series 4: 6. The Wedding",
+	"editorial_subtitle": "6/6 The Wedding. And the rave. Will the Kurupt crew deliver?",
+	"synopses": {
+		"small": "The big day has arrived - Kurupt FM's first daytime rave!"
+	},
+	"images": {
+		"standard": "/img/bbc3/p05g2bqq.jpg"
+	},
+	"labels": {
+		"category": "Comedy",
+		"editorial": "Full Series\u00a0\u00a0|\u00a0\u00a0"
+	},
+	"versions": {
+		"duration": "29 mins"
+	}
+}, {
+	"title": "Fleabag",
+	"subtitle": "Episode 1",
+	"editorial_subtitle": "",
+	"synopses": {
+		"small": "Angry, pervy, outrageous and hilarious, Fleabag arrives with a bang."
+	},
+	"images": {
+		"standard": "/img/bbc3/p0456fj1.jpg"
+	},
+	"labels": {
+		"category": "Comedy",
+		"editorial": ""
+	},
+	"versions": {
+		"duration": "26 mins"
+	}
+}, {
+	"title": "Drugs Map of Britain",
+	"subtitle": "9. Fentanyl: Deadlier Than Heroin",
+	"editorial_subtitle": "Episode 9. Fentanyl: Deadlier Than Heroin",
+	"synopses": {
+		"small": "Fifty times stronger than heroin - what's the reality for those addicted?"
+	},
+	"images": {
+		"standard": "/img/bbc3/p05g28f8.jpg"
+	},
+	"labels": {
+		"category": "Documentary",
+		"editorial": ""
+	},
+	"versions": {
+		"duration": "25 mins"
+	}
+}]

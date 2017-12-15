@@ -1,0 +1,26 @@
+<div class="collection live">
+  <div class="collection-image"><img src="{{ site.baseurl }}/img/{{ include.image }}" height="410" width="1280"></div>
+    <div class="live-info">
+      <div class="content-label">
+        <div class="pulse"><div class="inner"></div></div><div class="liveLabel">LIVE</div>
+        <div class="categoryLabel" style="margin-left: 8px;">{{include.label}}</div>
+      </div>
+      <div class="collection-title">{{include.title}}</div>
+      <div style="width: 28px; height: 2px; background-color: #EB4997; margin: 12px 0 12px 0; display: inline-block";></div>
+      <div class="collection-description">{{include.description}}</div>
+      <div class="live-bar"><div class="live-bar-progress"></div></div>
+  </div>
+  <div class="carousel-content">
+    <div class="content-wrapper watch-live">
+      <img src="{{ site.baseurl}}/img/live-play-icon.png" height="44" width="44" position="absolute" top="0">
+      <div class=button-text>Watch live</div>
+    </div>
+    <div class="content-wrapper watch-from-start">
+      <img src="{{ site.baseurl}}/img/watch-from-start-icon.png" height="44" width="44" position="absolute" top="0">
+      <div class=button-text>Watch from start</div>
+    </div>
+    {% for entity in site.data[include.data] offset=offset %}
+      {% include content-item-271px.html %}
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="carousel-title">{{include.title}}</div>
+  <div class="row-content">
+    {% for entity in site.data[include.data] limit:4 %}
+      {% include content-item-271px.html %}
+    {% endfor %}
+  </div>
+</div>

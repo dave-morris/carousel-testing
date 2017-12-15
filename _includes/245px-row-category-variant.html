@@ -1,0 +1,17 @@
+<div class="row" data-id="{{include.data}}">
+  <div class="carousel-title">{{include.title}}</div>
+  <div class="row-content">
+
+    <div class="content-wrapper viewCat">
+      <img src="{{ site.baseurl}}/img/categories.png" height="28" width="28">
+      <div class="viewAll-text">View all</div>
+      <div class="dividerMotif"></div>
+      <div class="viewAll-counter">{{include.title}}</div>
+  </div>
+  
+  {% for entity in site.data[include.data] limit:4 %}
+  {% include content-item-245px.html %}
+  {% endfor %}
+
+  </div>
+</div>

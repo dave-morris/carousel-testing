@@ -1,0 +1,71 @@
+[{
+	"title": "Rick Stein's Long Weekends",
+	"subtitle": "10. Palermo",
+	"editorial_subtitle": "",
+	"synopses": {
+		"small": "Rick Stein's long weekends across Europe come to a conclusion in the city of Palermo."
+	},
+	"images": {
+		"standard": "/img/37yrs-food/p04ksq7y.jpg"
+	},
+	"labels": {
+		"category": "Food",
+		"editorial": ""
+	},
+	"versions": {
+		"duration": "59 mins"
+	}
+	}, {
+		"title": "Horizon",
+		"subtitle": "2012-2013: 3. Eat, Fast and Live Longer",
+		"editorial_subtitle": "Putting fasting to the test",
+		"synopses": {
+			"small": "Michael Mosley examines the powerful science behind the ancient idea of fasting."
+		},
+		"images": {
+			"standard": "/img/37yrs-food/p01hk2l7.jpg"
+		},
+		"labels": {
+			"category": "Science",
+			"editorial": "Archive\u00a0\u00a0|\u00a0\u00a0"
+		},
+		"versions": {
+			"duration": "60 mins"
+		}
+},
+{
+	"title": "Mary Berry's Foolproof Cooking",
+	"subtitle": "Episode 1",
+	"editorial_subtitle": "",
+	"synopses": { "small": "Mary prepares salmon fillets with herbs and red pepper and a side of spiralised veg." },
+	"images": { "standard": "/img/37yrs-food/p03fv4rx.jpg" },
+	"labels": {
+		"category": "Food",
+		"editorial": ""
+	},
+	"versions": { "duration": "29 mins" }
+},
+{
+	"title": "Royal Recipes",
+	"subtitle": "Series 2: 4. Pies and Puddings",
+	"editorial_subtitle": "",
+	"synopses": { "small": "Michael Buerk and chef Anna Haugh cook a dish from an Edwardian full English breakfast." },
+	"images": { "standard": "/img/prog-images/p05m9c93.jpg" },
+	"labels": {
+		"category": "Food",
+		"editorial": "Last Chance\u00a0\u00a0|\u00a0\u00a0"
+	},
+	"versions": { "duration": "44 mins" }
+},
+{
+	"title": "Hairy Bikers' Best of British",
+	"subtitle": "Series 2: 7. Exotic Foods",
+	"editorial_subtitle": "",
+	"synopses": { "small": "The Bikers celebrate Britain's taste for the exotic and prepare a chilli ginger bread." },
+	"images": { "standard": "/img/prog-images/p01jwv5m.jpg" },
+	"labels": {
+		"category": "Food",
+		"editorial": ""
+	},
+	"versions": { "duration": "60 mins" }
+}]

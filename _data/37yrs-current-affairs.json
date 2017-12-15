@@ -1,0 +1,83 @@
+[{
+	"title": "Newsnight",
+	"subtitle": "05/10/2017",
+	"editorial_subtitle": "",
+	"synopses": {
+		"small": "With Emily Maitlis."
+	},
+	"images": {
+		"standard": "/img/37yrs-current-affairs/p05hhck1.jpg"
+	},
+	"labels": {
+		"category": "News",
+		"editorial": ""
+	},
+	"versions": {
+		"duration": "50 mins"
+	}
+	}, {
+		"title": "Hell in a Bottle: I Survived an Acid Attack",
+		"subtitle": "",
+		"editorial_subtitle": "",
+		"synopses": {
+			"small": "BBC Stories meets four survivors who have suffered as a result of this growing trend."
+		},
+		"images": {
+			"standard": "/img/37yrs-current-affairs/p05gr9mh.jpg"
+		},
+		"labels": {
+			"category": "News",
+			"editorial": ""
+		},
+		"versions": {
+			"duration": "21 mins"
+		}
+},
+{
+	"title": "Panorama",
+	"subtitle": "Africa's Billion Pound Migrant Trail",
+	"editorial_subtitle": "Africa's Billion Pound Migrant Trail",
+	"synopses": { "small": "Benjamin Zand reveals the scale of people-smuggling across sub-Saharan Africa." },
+	"images": { "standard": "/img/37yrs-current-affairs/p05gl4fy.jpg" },
+	"labels": {
+		"category": "Current affairs",
+		"editorial": ""
+	},
+	"versions": { "duration": "30 mins" }
+},
+{
+	"title": "The Andrew Marr Show",
+	"subtitle": "10/12/2017",
+	"editorial_subtitle": "",
+	"synopses": { "small": "Andrew Marr's guests include David Davis MP, Sir Keir Starmer MP and Ian Blackford MP." },
+	"images": { "standard": "/img/prog-images/p05qr1nz.jpg" },
+	"labels": {
+		"category": "News",
+		"editorial": ""
+	},
+	"versions": { "duration": "60 mins" }
+},
+{
+	"title": "Our World",
+	"subtitle": "The Return",
+	"editorial_subtitle": "",
+	"synopses": { "small": "Kati Pohler returns to China to meet her birth parents." },
+	"images": { "standard": "/img/prog-images/p05pl6h1.jpg" },
+	"labels": {
+		"category": "Documentary",
+		"editorial": ""
+	},
+	"versions": { "duration": "30 mins" }
+},
+{
+	"title": "Witness",
+	"subtitle": "25/11/2017",
+	"editorial_subtitle": "",
+	"synopses": { "small": "The moment the first living creature was sent up to orbit the Earth." },
+	"images": { "standard": "/img/prog-images/p023kwzq.jpg" },
+	"labels": {
+		"category": "History",
+		"editorial": ""
+	},
+	"versions": { "duration": "30 mins" }
+}]

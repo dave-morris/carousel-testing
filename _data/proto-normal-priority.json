@@ -1,0 +1,81 @@
+[{
+	"title": "Adventure",
+	"subtitle": "Quest under Capricorn: 1. Desert Gods",
+	"images": {
+		"standard": "/img/prog-images/p01hz7js.jpg"
+	},
+	"labels": {
+		"category": "Lifestyle",
+		"editorial": "Archive\u00a0\u00a0|\u00a0\u00a0"
+	},
+	"versions": {
+		"duration": "60"
+	}
+}, {
+	"title": "David Attenborough - The Early Years",
+	"subtitle": "",
+	"images": {
+		"standard": "/img/prog-images/p014dfnt.jpg"
+	},
+	"labels": {
+		"category": "Science & Nature",
+		"editorial": "Archive\u00a0\u00a0|\u00a0\u00a0"
+	},
+	"versions": {
+		"duration": "60"
+	}
+}, {
+	"title": "Elsa the Lioness",
+	"subtitle": "",
+	"images": {
+		"standard": "/img/prog-images/p01gwmsv.jpg"
+	},
+	"labels": {
+		"category": "Documentary",
+		"editorial": "Archive\u00a0\u00a0|\u00a0\u00a0"
+	},
+	"versions": {
+		"duration": "60"
+	}
+}, {
+	"title": "The Miracle of Bali",
+	"subtitle": "1. The Midday Sun",
+	"images": {
+		"standard": "/img/prog-images/p01hz7b3.jpg"
+	},
+	"labels": {
+		"category": "Lifestyle",
+		"editorial": "Archive\u00a0\u00a0|\u00a0\u00a0"
+	},
+	"versions": {
+		"duration": "60"
+	}
+},
+{
+	"title": "The People of Paradise",
+	"subtitle": "1. The Land Divers of Pentecost",
+	"images": {
+		"standard": "/img/prog-images/p04m7gh3.jpg"
+	},
+	"labels": {
+		"category": "Comedy",
+		"editorial": "Full Series\u00a0\u00a0|\u00a0\u00a0"
+	},
+	"versions": {
+		"duration": "60"
+	}
+},
+{
+	"title": "The People of Paradise",
+	"subtitle": "1. The Land Divers of Pentecost",
+	"images": {
+		"standard": "/img/prog-images/p01hz70y.jpg"
+	},
+	"labels": {
+		"category": "Lifestyle",
+		"editorial": "Archive\u00a0\u00a0|\u00a0\u00a0"
+	},
+	"versions": {
+		"duration": "60"
+	}
+}]

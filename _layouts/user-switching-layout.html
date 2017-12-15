@@ -1,0 +1,25 @@
+{% include head.html %}
+
+<div class="tv">
+  <div class="container switching">
+
+    <div style="position: fixed; top: 48px; left: 64px;">
+      <img src="{{ site.baseurl }}/img/bbc-logo.png">
+    </div>
+
+    <div class="carousel-title" style="margin-bottom: 68px; text-align: center;">
+      Select who's watching…
+    </div>
+
+    <div class="container-inner">
+        {{ content }}
+    </div>
+
+    <p style="color: #EBEBEB; font-size: 22px; position: absolute; bottom: -164px">Press <strong>back</strong> to go back</p>
+
+  </div>
+
+
+</div>
+
+{% include footer-switching.html %}
