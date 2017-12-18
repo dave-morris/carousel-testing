@@ -335,7 +335,7 @@ $(document).ready(function() {
 
             }
 
-            if (e.keyCode == 13 && $('.app-footer').hasClass('focus')) {
+            if (e.keyCode == 13 && $('.container-grid .app-footer').hasClass('focus')) {
 
               //remove the focus from the content item
               $('.content-wrapper.focus').removeClass('focus');
@@ -626,7 +626,7 @@ $(document).ready(function() {
                 //if it's not any of the last 4 content items
                 if (current < total -3) {
 
-                  var adjust = gridInnerPositionY - 266;
+                  var adjust = gridInnerPositionY - 260;
 
                   $('.active .grid-content .content-wrapper.focus').removeClass('focus').nextAll().eq(3).addClass('focus');
                   $('.active').parent().css('transform', 'translateY(' + adjust + 'px)');
@@ -690,7 +690,7 @@ $(document).ready(function() {
 
                   } else if (current == total -3) {
 
-                    var adjust = gridInnerPositionY - 266;
+                    var adjust = gridInnerPositionY - 260;
 
                     console.log("I'm the forth to last item, I need to move X amount");
                     $('.active .grid-content .content-wrapper.focus').removeClass('focus').nextAll().eq(2).addClass('focus');
@@ -718,7 +718,7 @@ $(document).ready(function() {
 
                   if (current == total -1 ) {
 
-                    var adjust = gridInnerPositionY - 266;
+                    var adjust = gridInnerPositionY - 260;
 
                     console.log("I'm the second to last item, I need to move X amount");
 
@@ -734,7 +734,7 @@ $(document).ready(function() {
 
                   } else if (current == total -2 ) {
 
-                    var adjust = gridInnerPositionY - 266;
+                    var adjust = gridInnerPositionY - 260;
 
                     console.log("I'm the third to last item, I need to move X amount");
                     $('.active .grid-content .content-wrapper.focus').removeClass('focus').nextAll().eq(1).addClass('focus');
@@ -742,7 +742,7 @@ $(document).ready(function() {
 
                   } else if (current == total -3) {
 
-                    var adjust = gridInnerPositionY - 266;
+                    var adjust = gridInnerPositionY - 260;
 
                     console.log("I'm the forth to last item, I need to move X amount");
                     $('.active .grid-content .content-wrapper.focus').removeClass('focus').nextAll().eq(2).addClass('focus');
@@ -768,7 +768,7 @@ $(document).ready(function() {
 
                   if (current == total -1 ) {
 
-                    var adjust = gridInnerPositionY - 266;
+                    var adjust = gridInnerPositionY - 260;
 
                     console.log("I'm the third to last item, I need to move X amount");
                     $('.active .grid-content .content-wrapper.focus').removeClass('focus').nextAll().eq(0).addClass('focus');
@@ -776,7 +776,7 @@ $(document).ready(function() {
 
                   } else if (current == total -2 ) {
 
-                    var adjust = gridInnerPositionY - 266;
+                    var adjust = gridInnerPositionY - 260;
 
                     console.log("I'm the third to last item, I need to move X amount");
                     $('.active .grid-content .content-wrapper.focus').removeClass('focus').nextAll().eq(1).addClass('focus');
@@ -784,7 +784,7 @@ $(document).ready(function() {
 
                   } else if (current == total -3) {
 
-                    var adjust = gridInnerPositionY - 266;
+                    var adjust = gridInnerPositionY - 260;
 
                     console.log("I'm the forth to last item, I need to move X amount");
                     $('.active .grid-content .content-wrapper.focus').removeClass('focus').nextAll().eq(2).addClass('focus');
