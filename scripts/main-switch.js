@@ -95,7 +95,7 @@ $(document).ready(function() {
               if ($('.active .content-wrapper').hasClass('wasfocus')) {
                   $('.active .content-wrapper.wasfocus').addClass('focus').removeClass('wasfocus');
               } else {
-                  $('.active .content-wrapper:eq(0)').addClass('focus');
+                  $('.active .content-wrapper:eq(1)').addClass('focus');
               }
             }
 
@@ -259,7 +259,7 @@ $(document).ready(function() {
                     if ($('.active .content-wrapper').hasClass('wasfocus')) {
                         $('.active .content-wrapper.wasfocus').addClass('focus').removeClass('wasfocus');
                     } else {
-                        $('.active .content-wrapper:eq(0)').addClass('focus');
+                        $('.active .content-wrapper:eq(1)').addClass('focus');
                     }
                 }
             }
@@ -466,7 +466,7 @@ $(document).ready(function() {
                     if ($('.active .content-wrapper').hasClass('wasfocus')) {
                         $('.active .content-wrapper.wasfocus').addClass('focus').removeClass('wasfocus');
                     } else {
-                        $('.active .content-wrapper:eq(0)').addClass('focus');
+                        $('.active .content-wrapper:eq(1)').addClass('focus');
                     }
 
                 } else if (current == 1) {
@@ -478,7 +478,7 @@ $(document).ready(function() {
                     if ($('.active .content-wrapper').hasClass('wasfocus')) {
                         $('.active .content-wrapper.wasfocus').addClass('focus').removeClass('wasfocus');
                     } else {
-                        $('.active .content-wrapper:eq(0)').addClass('focus');
+                        $('.active .content-wrapper:eq(1)').addClass('focus');
 
                     }
 
@@ -502,7 +502,7 @@ $(document).ready(function() {
                     if ($('.active .content-wrapper').hasClass('wasfocus')) {
                         $('.active .content-wrapper.wasfocus').addClass('focus').removeClass('wasfocus');
                     } else {
-                        $('.active .content-wrapper:eq(0)').addClass('focus');
+                        $('.active .content-wrapper:eq(1)').addClass('focus');
                     }
                 }
             }

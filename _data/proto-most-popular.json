@@ -481,9 +481,41 @@
 	},
 	"labels": {
 		"category": "CBBC",
-		"editorial": "Exclusive"
+		"editorial": "Exclusive\u00a0\u00a0|\u00a0\u00a0"
 	},
 	"versions": {
 		"duration": "2"
+	}
+},
+{
+	"title": "Have I Got News for You",
+	"subtitle": "Series 54: Episode 10",
+	"synopses":{
+		"small": "Paul Merton and Ian Hislop are joined by David Tennant, Angela Rayner and Joe Wilkinson."},
+	"images": {
+		"standard": "/img/prog-images/p05r6lsr.jpg"
+	},
+	"labels": {
+		"category": "Comedy",
+		"editorial": ""
+	},
+	"versions": {
+		"duration": "30 mins"
+	}
+},
+{
+	"title": "Love, Lies & Records",
+	"subtitle": "Series 1: Episode 5",
+	"synopses":{
+		"small": "After Rob's surprise proposal Kate struggles to choose between her heart and her head."},
+	"images": {
+		"standard": "/img/prog-images/p05q4nsx.jpg"
+	},
+	"labels": {
+		"category": "Drama",
+		"editorial": ""
+	},
+	"versions": {
+		"duration": "58 mins"
 	}
 }]

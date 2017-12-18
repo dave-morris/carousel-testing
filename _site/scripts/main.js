@@ -4,8 +4,6 @@ $(document).ready(function() {
     $('.primary-navigation').addClass('active');
     $('.active .content-wrapper').eq(1).addClass('focus');
 
-    i = 0;
-
     goTo = "Not defined";
 
     // First child in container inner (and it's first child) first carousel gets focus by default
@@ -31,7 +29,7 @@ $(document).ready(function() {
     //For the vertical adjustment of sections
     function adjustSection() {
 
-      // total = target the Parent of the active slice and then grab all the children. Could also be siblings (but then it doesn't count itself)
+      // total = target the parent of the active slice and then grab all the children. i.e. All the siblings
       total = $('.active').parent().children().length;
       current = $('.active').index() + 1;
       sectionHeight = $('.active').height() + parseInt($('.active').css("margin-top")) + 3;
@@ -85,9 +83,9 @@ $(document).ready(function() {
 
               //find lastActive section if it exists, otherwise use the first one
               if ($('.container-inner').children().hasClass('lastActive')) {
-                $('.container-inner').find('.lastActive').addClass('active').removeClass('lastActive');
+                  $('.container-inner').find('.lastActive').addClass('active').removeClass('lastActive');
               } else {
-                $('.container-inner').children().eq(0).addClass('active');
+                  $('.container-inner').children().eq(0).addClass('active');
               }
 
               //remove the focus state from the primary nav
@@ -337,8 +335,68 @@ $(document).ready(function() {
 
             }
 
+            if (e.keyCode == 13 && $('.app-footer').hasClass('focus')) {
+
+              //remove the focus from the content item
+              $('.content-wrapper.focus').removeClass('focus');
+
+              //remove the active class from the grid and give back to lastActive
+              $('.active').removeClass('active');
+
+              //hide the display of the current container
+              $('.container.onwardJourney').hide();
+              $('.container.category').hide();
+              $('.container.atoz').hide();
+
+              //reset view back to 0
+              $('.container-grid').css('transform', 'translateY(0px)');
+
+              //show the homepage and nav
+              $('.container.homepage').show();
+              $('.primary-navigation').show();
+
+
+              //find the lastActive div and make active
+              $('.container.homepage').children().find('.lastActive').removeClass('lastActive').addClass('active');
+
+              //give focus to the relevant content item
+              $('.active .content-wrapper.lastfocus').addClass('focus').removeClass('lastfocus');
+
+            }
+
             //Press back – Amazon Fire Back Keycode = 27!!
             if (e.keyCode == 27) {
+
+              if ($('.container-grid .app-footer').hasClass('focus')) {
+
+                e.preventDefault();
+
+                  //remove the focus from the content item
+                  $('.content-wrapper.focus').removeClass('focus');
+
+                  //remove the active class from the grid and give back to lastActive
+                  $('.active').removeClass('active');
+
+                  //hide the display of the current container
+                  $('.container.onwardJourney').hide();
+                  $('.container.category').hide();
+                  $('.container.atoz').hide();
+
+                  //reset view back to 0
+                  $('.container-grid').css('transform', 'translateY(0px)');
+
+                  //show the homepage and nav
+                  $('.container.homepage').show();
+                  $('.primary-navigation').show();
+
+
+                  //find the lastActive div and make active
+                  $('.container.homepage').children().find('.lastActive').removeClass('lastActive').addClass('active');
+
+                  //give focus to the relevant content item
+                  $('.active .content-wrapper.lastfocus').addClass('focus').removeClass('lastfocus');
+
+              } else {
 
               e.preventDefault();
 
@@ -357,6 +415,8 @@ $(document).ready(function() {
                 } else {
                     $('.active .content-wrapper:eq(0)').addClass('focus');
                 }
+
+              }
 
             }
 
@@ -545,24 +605,200 @@ $(document).ready(function() {
             }
 
 
-            //GRID KEY COMMANDS
-        } else if ($('.endlessgrid').hasClass('active')) {
+          //GRID KEY COMMANDS
+        }  else if ($('.endlessgrid').hasClass('active')) {
 
             // Press down
             if (e.keyCode == 40) {
 
+              adjustSection();
+
+              //if the grid is the only thing in the view (Not a A-Z to Cat page)
+              if (total == 1) {
+
+                //Do nothing
+
+              //if the grid has another slice above or below it (ie. A back to home button)
+              } else if (total > 1) {
+
                 adjustContent();
 
-                if (current < total - 3) {
+                //if it's not any of the last 4 content items
+                if (current < total -3) {
 
-                    adjustSection();
+                  var adjust = gridInnerPositionY - 266;
+
+                  $('.active .grid-content .content-wrapper.focus').removeClass('focus').nextAll().eq(3).addClass('focus');
+                  $('.active').parent().css('transform', 'translateY(' + adjust + 'px)');
+
+                // if it is one of the last 4 content items
+                } else {
+
+                  if (total % 4 == 0) {
+
+                  $('.active').removeClass('active').next().addClass('active');
+
+                  $('.content-wrapper.focus').addClass('wasfocus').removeClass('focus');
+
+                  if ($('.active .content-wrapper').hasClass('wasfocus')) {
+                      $('.active .content-wrapper.wasfocus').addClass('focus').removeClass('wasfocus');
+                  } else {
+                      $('.active .content-wrapper:eq(0)').addClass('focus');
+                  }
+
+                } else if (total % 4 == 3) {
+
+                  console.log("Modulus remainder 3");
+
+                  if (current == total) {
+
+                    $('.active').removeClass('active').next().addClass('active');
+
+                    $('.content-wrapper.focus').addClass('wasfocus').removeClass('focus');
+
+                    if ($('.active .content-wrapper').hasClass('wasfocus')) {
+                        $('.active .content-wrapper.wasfocus').addClass('focus').removeClass('wasfocus');
+                    } else {
+                        $('.active .content-wrapper:eq(0)').addClass('focus');
+                    }
+
+                  }
+
+                  if (current == total -1 ) {
+
+                    $('.active').removeClass('active').next().addClass('active');
+
+                    $('.content-wrapper.focus').addClass('wasfocus').removeClass('focus');
+
+                    if ($('.active .content-wrapper').hasClass('wasfocus')) {
+                        $('.active .content-wrapper.wasfocus').addClass('focus').removeClass('wasfocus');
+                    } else {
+                        $('.active .content-wrapper:eq(0)').addClass('focus');
+                    }
+
+                  } else if (current == total -2) {
+
+                    $('.active').removeClass('active').next().addClass('active');
+
+                    $('.content-wrapper.focus').addClass('wasfocus').removeClass('focus');
+
+                    if ($('.active .content-wrapper').hasClass('wasfocus')) {
+                        $('.active .content-wrapper.wasfocus').addClass('focus').removeClass('wasfocus');
+                    } else {
+                        $('.active .content-wrapper:eq(0)').addClass('focus');
+                    };
+
+                  } else if (current == total -3) {
+
                     var adjust = gridInnerPositionY - 266;
 
-                    $('.active .grid-content .content-wrapper.focus').removeClass('focus').nextAll().eq(3).addClass('focus');
+                    console.log("I'm the forth to last item, I need to move X amount");
+                    $('.active .grid-content .content-wrapper.focus').removeClass('focus').nextAll().eq(2).addClass('focus');
                     $('.active').parent().css('transform', 'translateY(' + adjust + 'px)');
 
+                  }
+
+                } else if (total % 4 == 2) {
+
+                  console.log("Modulus remainder 2");
+
+                  if (current == total) {
+
+                    $('.active').removeClass('active').next().addClass('active');
+
+                    $('.content-wrapper.focus').addClass('wasfocus').removeClass('focus');
+
+                    if ($('.active .content-wrapper').hasClass('wasfocus')) {
+                        $('.active .content-wrapper.wasfocus').addClass('focus').removeClass('wasfocus');
+                    } else {
+                        $('.active .content-wrapper:eq(0)').addClass('focus');
+                    }
+
+                  }
+
+                  if (current == total -1 ) {
+
+                    var adjust = gridInnerPositionY - 266;
+
+                    console.log("I'm the second to last item, I need to move X amount");
+
+                    $('.active').removeClass('active').next().addClass('active');
+
+                    $('.content-wrapper.focus').addClass('wasfocus').removeClass('focus');
+
+                    if ($('.active .content-wrapper').hasClass('wasfocus')) {
+                        $('.active .content-wrapper.wasfocus').addClass('focus').removeClass('wasfocus');
+                    } else {
+                        $('.active .content-wrapper:eq(0)').addClass('focus');
+                    }
+
+                  } else if (current == total -2 ) {
+
+                    var adjust = gridInnerPositionY - 266;
+
+                    console.log("I'm the third to last item, I need to move X amount");
+                    $('.active .grid-content .content-wrapper.focus').removeClass('focus').nextAll().eq(1).addClass('focus');
+                    $('.active').parent().css('transform', 'translateY(' + adjust + 'px)');
+
+                  } else if (current == total -3) {
+
+                    var adjust = gridInnerPositionY - 266;
+
+                    console.log("I'm the forth to last item, I need to move X amount");
+                    $('.active .grid-content .content-wrapper.focus').removeClass('focus').nextAll().eq(2).addClass('focus');
+                    $('.active').parent().css('transform', 'translateY(' + adjust + 'px)');
+
+                  }
+
+                } else if (total % 4 == 1) {
+
+                  if (current == total) {
+
+                    $('.active').removeClass('active').next().addClass('active');
+
+                    $('.content-wrapper.focus').addClass('wasfocus').removeClass('focus');
+
+                    if ($('.active .content-wrapper').hasClass('wasfocus')) {
+                        $('.active .content-wrapper.wasfocus').addClass('focus').removeClass('wasfocus');
+                    } else {
+                        $('.active .content-wrapper:eq(0)').addClass('focus');
+                    }
+
+                  }
+
+                  if (current == total -1 ) {
+
+                    var adjust = gridInnerPositionY - 266;
+
+                    console.log("I'm the third to last item, I need to move X amount");
+                    $('.active .grid-content .content-wrapper.focus').removeClass('focus').nextAll().eq(0).addClass('focus');
+                    $('.active').parent().css('transform', 'translateY(' + adjust + 'px)');
+
+                  } else if (current == total -2 ) {
+
+                    var adjust = gridInnerPositionY - 266;
+
+                    console.log("I'm the third to last item, I need to move X amount");
+                    $('.active .grid-content .content-wrapper.focus').removeClass('focus').nextAll().eq(1).addClass('focus');
+                    $('.active').parent().css('transform', 'translateY(' + adjust + 'px)');
+
+                  } else if (current == total -3) {
+
+                    var adjust = gridInnerPositionY - 266;
+
+                    console.log("I'm the forth to last item, I need to move X amount");
+                    $('.active .grid-content .content-wrapper.focus').removeClass('focus').nextAll().eq(2).addClass('focus');
+                    $('.active').parent().css('transform', 'translateY(' + adjust + 'px)');
+
+                  }
+
                 }
+
+              }
+
             }
+
+          }
 
             // Press up
             if (e.keyCode == 38) {
@@ -642,7 +878,7 @@ $(document).ready(function() {
                 //give focus to the relevant content item
                 $('.active .content-wrapper.lastfocus').addClass('focus').removeClass('lastfocus');
 
-            }
+              }
 
         }
 
@@ -900,8 +1136,8 @@ $(document).ready(function() {
         //     });
         // }
 
-        delete window.total;
-        delete window.current;
+        // delete window.total;
+        // delete window.current;
         // delete window.sectionHeight;
         // delete window.containerInnerPositionY;
         delete window.widthToMove;
