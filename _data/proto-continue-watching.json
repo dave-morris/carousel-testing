@@ -6,25 +6,25 @@
 		"standard": "/img/prog-images/p05q5hkv.jpg"
 	},
 	"labels": {
-		"category": "Food",
-		"editorial": ""
+		"category": "20 mins left",
+		"editorial": "Resume\u00a0\u00a0|\u00a0\u00a0"
 	},
 	"versions": {
 		"duration": "30 mins left"
 	}
 }, {
 	"title": "Headhunters",
-	"subtitle": "",
+	"subtitle": "\u00a0\u00a0",
 	"synopses":{ "small": "A headhunter resolves to steal a painting owned by one of his contacts."},
 	"images": {
 		"standard": "/img/prog-images/p02gx9rr.jpg"
 	},
 	"labels": {
-		"category": "Film",
-		"editorial": ""
+		"category": "45 mins left",
+		"editorial": "Resume\u00a0\u00a0|\u00a0\u00a0"
 	},
 	"versions": {
-		"duration": "45mins left"
+		"duration": "45 mins left"
 	}
 }, {
 	"title": "EastEnders",
@@ -34,22 +34,22 @@
 		"standard": "/img/prog-images/p05q4p3l.jpg"
 	},
 	"labels": {
-		"category": "Drama",
-		"editorial": ""
+		"category": "14 mins left",
+		"editorial": "Resume\u00a0\u00a0|\u00a0\u00a0"
 	},
 	"versions": {
 		"duration": "58"
 	}
 }, {
 	"title": "Britain's Teenage Drug Runners",
-	"subtitle": "",
+	"subtitle": "\u00a0\u00a0",
 	"synopses":{ "small": "The urban gangs expanding their drug operations into the countryside and seaside towns."},
 	"images": {
 		"standard": "/img/prog-images/p05j4dwq.jpg"
 	},
 	"labels": {
-		"category": "Documentary",
-		"editorial": ""
+		"category": "32 mins left",
+		"editorial": "Resume\u00a0\u00a0|\u00a0\u00a0"
 	},
 	"versions": {
 		"duration": "58"
@@ -57,14 +57,14 @@
 },
 {
 	"title": "The Brit Who Tried to Kill Trump",
-	"subtitle": "",
+	"subtitle": "\u00a0\u00a0",
 	"synopses":{ "small": "Documentary looking at the case of Michael Sandford, who tried to shoot Donald Trump."},
 	"images": {
 		"standard": "/img/prog-images/p04py14z.jpg"
 	},
 	"labels": {
-		"category": "Documentary",
-		"editorial": ""
+		"category": "17 mins left",
+		"editorial": "Resume\u00a0\u00a0|\u00a0\u00a0"
 	},
 	"versions": {
 		"duration": "35 mins left"
@@ -78,8 +78,8 @@
 		"standard": "/img/prog-images/p05clrdr.jpg"
 	},
 	"labels": {
-		"category": "Comedy",
-		"editorial": "Full Series\u00a0\u00a0|\u00a0\u00a0"
+		"category": "15 mins left",
+		"editorial": "Resume\u00a0\u00a0|\u00a0\u00a0"
 	},
 	"versions": {
 		"duration": "30 mins left"
