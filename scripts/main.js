@@ -382,7 +382,6 @@ $(document).ready(function() {
                   $('.container.homepage').show();
                   $('.primary-navigation').show();
 
-
                   //find the lastActive div and make active
                   $('.container.homepage').children().find('.lastActive').removeClass('lastActive').addClass('active');
 
@@ -416,6 +415,9 @@ $(document).ready(function() {
                   } else {
                       $('.active .content-wrapper:eq(0)').addClass('focus');
                   }
+
+                  $('.container-inner .content-wrapper').removeClass('wasfocus');
+                  $('.container-inner .carousel-content').css('transform', 'translateX(0px)');
 
                 } else if (current > 1 ) {
 
@@ -553,13 +555,6 @@ $(document).ready(function() {
             //Press back – Amazon Fire Back Keycode = 27!!
             if (e.keyCode == 27) {
 
-              adjustContent();
-
-              //if we are the first item in the carousel
-              if (current == 1) {
-
-                console.log("I am the first item in a row");
-
                 //remove the focus from the content item
                 $('.content-wrapper.focus').addClass('wasfocus').removeClass('focus');
 
@@ -579,20 +574,7 @@ $(document).ready(function() {
                     $('.active .content-wrapper:eq(0)').addClass('focus');
                 }
 
-              } else if (current > 1 ) {
-
-                console.log("I am not the first item in a row");
-
-                //remove the class of focus from the content item
-                $('.active .content-wrapper.focus').removeClass('focus');
-
-                //give focus to the first content item in the carousel
-                $('.active .content-wrapper:first').addClass('focus');
-
-                //reset the translateX position of the carousel
-                $('.carousel.active .carousel-content').css('transform', 'translateX(0px)');
-
-              }
+                $('.container-inner .content-wrapper').removeClass('wasfocus');
 
             }
 
