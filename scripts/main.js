@@ -575,6 +575,7 @@ $(document).ready(function() {
                 }
 
                 $('.container-inner .content-wrapper').removeClass('wasfocus');
+                $('.container-inner .carousel-content').css('transform', 'translateX(0px)');
 
             }
 
