@@ -81,7 +81,7 @@ $(document).ready(function() {
               //remove active class from navigation
               $('.active').removeClass('active');
 
-              $('.container-inner').children().eq(0).addClass('active');
+              $('.container-inner').children().eq(1).addClass('active');
 
               //remove the focus state from the primary nav
               $('.content-wrapper.focus').addClass('wasfocus').removeClass('focus');
