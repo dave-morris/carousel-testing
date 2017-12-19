@@ -81,12 +81,7 @@ $(document).ready(function() {
               //remove active class from navigation
               $('.active').removeClass('active');
 
-              //find lastActive section if it exists, otherwise use the first one
-              if ($('.container-inner').children().hasClass('lastActive')) {
-                  $('.container-inner').find('.lastActive').addClass('active').removeClass('lastActive');
-              } else {
-                  $('.container-inner').children().eq(0).addClass('active');
-              }
+              $('.container-inner').children().eq(0).addClass('active');
 
               //remove the focus state from the primary nav
               $('.content-wrapper.focus').addClass('wasfocus').removeClass('focus');
@@ -369,8 +364,6 @@ $(document).ready(function() {
 
               if ($('.container-grid .app-footer').hasClass('focus')) {
 
-                e.preventDefault();
-
                   //remove the focus from the content item
                   $('.content-wrapper.focus').removeClass('focus');
 
@@ -398,22 +391,45 @@ $(document).ready(function() {
 
               } else {
 
-              e.preventDefault();
+                adjustContent();
 
-                //remove the focus from the content item
-                $('.content-wrapper.focus').addClass('wasfocus').removeClass('focus');
+                //if we are the first item in the carousel
+                if (current == 1) {
 
-                //remove the active class from the grid and give back to lastActive
-                $('.active').addClass('lastActive').removeClass('active');
+                  console.log("I am the first item in a carousel");
 
-                //give primary nav active state
-                $('.primary-navigation').addClass('active');
+                  //remove the focus from the content item
+                  $('.content-wrapper.focus').addClass('wasfocus').removeClass('focus');
 
-                //give previously highlighted tab focus
-                if ($('.active .content-wrapper').hasClass('wasfocus')) {
-                    $('.active .content-wrapper.wasfocus').addClass('focus').removeClass('wasfocus');
-                } else {
-                    $('.active .content-wrapper:eq(0)').addClass('focus');
+                  //reset view to top of page
+                  $('.active').parent().css('transform', 'translateY(0px)');
+
+                  //remove the active class from the grid and give back to lastActive
+                  $('.active').addClass('lastActive').removeClass('active');
+
+                  //give primary nav active state
+                  $('.primary-navigation').addClass('active');
+
+                  //give previously highlighted tab focus
+                  if ($('.active .content-wrapper').hasClass('wasfocus')) {
+                      $('.active .content-wrapper.wasfocus').addClass('focus').removeClass('wasfocus');
+                  } else {
+                      $('.active .content-wrapper:eq(0)').addClass('focus');
+                  }
+
+                } else if (current > 1 ) {
+
+                  console.log("I am not the first item in a carousel");
+
+                  //remove the class of focus from the content item
+                  $('.active .content-wrapper.focus').removeClass('focus');
+
+                  //give focus to the first content item in the carousel
+                  $('.active .content-wrapper:first').addClass('focus');
+
+                  //reset the translateX position of the carousel
+                  $('.carousel.active .carousel-content').css('transform', 'translateX(0px)');
+
                 }
 
               }
@@ -537,10 +553,18 @@ $(document).ready(function() {
             //Press back – Amazon Fire Back Keycode = 27!!
             if (e.keyCode == 27) {
 
-              e.preventDefault();
+              adjustContent();
+
+              //if we are the first item in the carousel
+              if (current == 1) {
+
+                console.log("I am the first item in a row");
 
                 //remove the focus from the content item
                 $('.content-wrapper.focus').addClass('wasfocus').removeClass('focus');
+
+                //reset view to top of page
+                $('.active').parent().css('transform', 'translateY(0px)');
 
                 //remove the active class from the grid and give back to lastActive
                 $('.active').addClass('lastActive').removeClass('active');
@@ -554,6 +578,21 @@ $(document).ready(function() {
                 } else {
                     $('.active .content-wrapper:eq(0)').addClass('focus');
                 }
+
+              } else if (current > 1 ) {
+
+                console.log("I am not the first item in a row");
+
+                //remove the class of focus from the content item
+                $('.active .content-wrapper.focus').removeClass('focus');
+
+                //give focus to the first content item in the carousel
+                $('.active .content-wrapper:first').addClass('focus');
+
+                //reset the translateX position of the carousel
+                $('.carousel.active .carousel-content').css('transform', 'translateX(0px)');
+
+              }
 
             }
 
