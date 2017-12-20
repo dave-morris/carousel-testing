@@ -81,7 +81,7 @@ $(document).ready(function() {
               //remove active class from navigation
               $('.active').removeClass('active');
 
-              $('.container-inner').children().eq(1).addClass('active');
+              $('.container-inner').children().eq(0).addClass('active');
 
               //remove the focus state from the primary nav
               $('.content-wrapper.focus').addClass('wasfocus').removeClass('focus');
@@ -90,7 +90,7 @@ $(document).ready(function() {
               if ($('.active .content-wrapper').hasClass('wasfocus')) {
                   $('.active .content-wrapper.wasfocus').addClass('focus').removeClass('wasfocus');
               } else {
-                  $('.active .content-wrapper:eq(0)').addClass('focus');
+                  $('.active .content-wrapper:eq(1)').addClass('focus');
               }
             }
 
